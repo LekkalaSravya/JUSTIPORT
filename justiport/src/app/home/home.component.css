@@ -1,0 +1,258 @@
+.header{
+
+    position: absolute; 
+    width:1374px;
+    /*background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://thumbs.dreamstime.com/b/horror-dense-ghostly-dark-forest-scary-creepy-night-landscape-clumsy-tree-branches-against-backdrop-moonlight-164191654.jpg");*/
+    background-color: black;
+    height:50px;
+    padding: 2rem 1%;
+    display: flex;
+    margin-left: 55px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 4px 4px 2px #aa9166;
+}
+.navigation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+     
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:  px;
+    width:1000px;
+    height:50px;
+    align-items: center;
+    padding:1vw;
+     
+    
+}
+.header span{
+    font-size:35px;
+    font-family: 'Nosifer',cursive;
+    padding-right:250px;
+    color:#aa9166;
+    font-weight: bold;
+} 
+ 
+.navigation a{
+     text-decoration: none;
+    color:#aa9166;
+    font-size: 20px;
+    font-style: calc();
+    
+}
+.navigation a:hover{
+    border-radius: 5px;
+    border-width: .2rem;
+    color:white;
+} 
+.overlay{
+    width:100%;
+    height: 80vh;
+    /* background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
+    position: absolute;
+}
+
+.banner{
+    margin-top: 5px;
+    width: 100%;
+   
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width:72%;
+    height: 80vh;
+    position: absolute;
+    top:0;
+    padding-top: 100px;
+    margin-left: 48px;
+    margin-right: 87px;
+    
+}
+ 
+#slideimg{
+    width:130%;
+    height:80vh;
+     
+    
+}
+/* @keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1); 
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+} */
+.features{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: calc();
+    padding-left: 20px;
+}
+.features h1{
+    font-size: 30px;
+    align-items: center;
+    margin-left: 60px;
+    padding-left: 390px;
+    margin-top: 20px;
+}
+.features .box-container{
+    margin-left: 40px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(3rem,1fr));
+    gap: 4.5rem;
+}
+.box{
+    padding:3px;
+    background-color: black;
+    width: 300px;
+    height: 400px;
+}
+.box i{
+    width: 100px;
+    height: 100px;
+    margin-top:30px;
+    margin-left: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: #aa9166;
+    background: #121518;
+    transition: .5s;
+}
+.box h3{
+    color:#aa9166;
+    padding-left: 90px;
+    margin-top: 15px;
+    height:70px;
+    width: 200px;
+}
+.box  pre{
+    background: black;
+    color:#999999;
+    margin-left: 8px;
+    font-size: 15px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+    color:#aa9166;
+}
+footer{
+    margin-top: 20px;
+    padding: 6vw;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40px;
+
+}
+footer h3{
+    color: #aa9166;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: #aa9166;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+footer li:hover{
+    color: aqua;
+}
+footer .subscribe{
+    margin-top: 20px ;
+}
+footer input{
+    width: 220px;
+    padding:15px 12px;
+    border: none;
+    outline: none;
+    color: black;
+}
+footer .subscribe a{
+    text-decoration:none;
+    font-size: 20px;
+    padding: 13px 35px;
+    background-color: aliceblue;
+    font-weight: 600;
+    border-radius:5px ;
+}
+footer .subscribe a.yellow{
+    color:white;
+    background:orange;
+    transition: 0.3s ease;
+}
+footer .subscribe a.yellow:hover{
+    color:black;
+    background:white;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-right: 400px;
+    color:black;
+    
+}
+.feature-top { 
+    margin-top: 2px;
+    margin-bottom: 45px; 
+    padding-left: 46px;
+    display:flex;
+    grid-template-columns: repeat(autofit,minmax(6rem,1fr));
+    gap: 0.1rem;
+}
+
+ 
+.feature-top .feature-item {
+    padding: 30px 0;
+    text-align: center;
+    height: 140px;
+    width: 350px;
+    background: black;
+     
+}
+
+.feature-top .feature-item i {
+    color: #aa9166;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.feature-top .feature-item h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.feature-top .feature-item p {
+    color: #999999;
+    margin: 0;
+    font-size: 18px;
+}
+  

@@ -1,0 +1,213 @@
+.header{
+    margin-top: 1px; 
+    top: 0; 
+    left: 0; 
+    position: fixed; 
+    width:1374px;
+    /*background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://thumbs.dreamstime.com/b/horror-dense-ghostly-dark-forest-scary-creepy-night-landscape-clumsy-tree-branches-against-backdrop-moonlight-164191654.jpg");*/
+    background-color: black;
+    height:30px;
+    padding: 2rem 1%;
+    display: flex;
+    margin-left: 55px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 4px 4px 2px #aa9166;
+}
+.navigation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+     
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:  5px;
+    width:1000px;
+    height:50px;
+    align-items: center;
+    padding:1vw;
+     
+    
+}
+.header span{
+    font-size:35px;
+    font-family: 'Nosifer',cursive;
+    padding-right:250px;
+    color:#aa9166;
+    font-weight: bold;
+} 
+ 
+.navigation a{
+     text-decoration: none;
+    color:#aa9166;
+    font-size: 20px;
+    font-style: calc();
+    
+}
+.navigation a:hover{
+    border-radius: 5px;
+    border-width: .2rem;
+    color:white;
+} 
+.home {
+   background:url("https://t4.ftcdn.net/jpg/05/16/20/99/360_F_516209984_APT701DWSDCUPzErByEByUrqEjHwRYCX.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 600px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.home-box h1{
+   color:white;
+   padding-left: 500px;
+   font-size: 35px;
+   font-family: 'Nosifer',cursive;
+   padding-top: 300px;
+   margin-top: 100px;
+}
+.choose{
+   display:flex;
+   grid-template-columns: repeat(autofit,minmax(3rem,1fr));
+   gap:1.5rem;
+   margin-left: 50px;
+
+}
+.choose-img img{
+   padding-right: 10px;
+}
+
+.choose-box1{
+   display:flex;
+   grid-template-columns: repeat(autofit,minmax(3rem,1fr));
+   gap:1.5rem;
+   margin-top: 20px;
+   padding: 20px;
+}
+.caption h1{
+   margin-top: 40px;
+   padding-left: 200px;
+   font-size: 30px;
+   font-family: 'Nosifer',cursive;
+   color:black;
+}
+.practice i{
+   color:#aa9166; 
+   background: black;
+   padding-left: 20px;
+   width: 40px;
+   margin-top: 20px;
+   color: #aa9166;
+   font-size: 35px;
+   margin-bottom: 10px;
+}
+.practice{
+   padding: 30px 0;
+   text-align: center;
+   height: 60px;
+   width: 550px;
+   background: black;
+}
+.choose-box{
+   margin-top: 40px;
+}
+.practice-content h2{
+   font-style: italic;
+   font-family: 'Nosifer',cursive;
+   color:#aa9166;
+}
+.practice-content p{
+   color:rgb(121, 112, 112);
+}
+footer{
+   margin-top: 20px;
+   padding: 6vw;
+   background-color:black;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+footer .footer-col{
+   padding-bottom: 40px;
+
+}
+footer h3{
+   color: #aa9166;
+   font-weight: 600;
+   padding-bottom: 20px;
+}
+footer li{
+   list-style: none;
+   color: #aa9166;
+   padding: 10px 0;
+   font-size: 15px;
+   cursor: pointer;
+
+}
+footer li:hover{
+   color: aqua;
+}
+footer .subscribe{
+   margin-top: 20px ;
+}
+footer input{
+   width: 220px;
+   padding:15px 12px;
+   background:;
+   border: none;
+   outline: none;
+   color: black;
+}
+footer .subscribe a{
+   text-decoration:none;
+   font-size: 20px;
+   padding: 13px 35px;
+   background-color: aliceblue;
+   font-weight: 600;
+   border-radius:5px ;
+}
+footer .subscribe a.yellow{
+   color:white;
+   background:orange;
+   transition: 0.3s ease;
+}
+footer .subscribe a.yellow:hover{
+   color:black;
+   background:white;
+}
+.expert{
+    padding-left: 20px;
+}
+.expert h1{
+   margin-top: 20px;
+   padding-left: 550px;
+   font-size: 30px;
+   font-family: 'Nosifer',cursive;
+   display:flex;
+   grid-template-columns: repeat(autofit,minmax(3rem,1fr));
+   gap:2.5em;
+}
+.law1{
+   background: black;
+   height: 350PX;
+   width: 300px;
+   align-items: center;
+}
+.law1 img {
+  margin-top: 20PX;
+  margin-left: 50px;
+  height: 240px;
+  width: 160px;
+}
+.law1 h1{
+  padding-left: 40px;
+  color:#aa9166;
+}
+.law{
+   margin-top: 40px;
+   display:flex;
+   grid-template-columns: repeat(autofit,minmax(3rem,1fr));
+   gap:2.5em; 
+   padding-left: 50px;
+}
