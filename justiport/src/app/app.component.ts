@@ -11,11 +11,14 @@ import { SectionsComponent } from './sections/sections.component';
 import { AttroneysComponent } from './attroneys/attroneys.component';
 import { LawhomeComponent } from './lawhome/lawhome.component';
 import { LawloginComponent } from './lawlogin/lawlogin.component';
+import { AtroComponent } from './atro/atro.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HomeComponent,AboutComponent,SignupComponent,NavComponent,LogComponent,UserhomeComponent,SectionsComponent,AttroneysComponent,LawhomeComponent,LawloginComponent],
+  imports: [RouterOutlet,HomeComponent,AboutComponent,SignupComponent,NavComponent,LogComponent,UserhomeComponent,SectionsComponent,AttroneysComponent,LawhomeComponent,LawloginComponent,AtroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

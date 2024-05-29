@@ -9,6 +9,8 @@ import { UserhomeComponent } from './userhome/userhome.component';
 import { SectionsComponent } from './sections/sections.component';
 import { AttroneysComponent } from './attroneys/attroneys.component';
 import { LawhomeComponent } from './lawhome/lawhome.component';
+import { AtroComponent } from './atro/atro.component';
+
 
 export const routes: Routes = [
     {path:"",component:HomeComponent},
@@ -19,5 +21,8 @@ export const routes: Routes = [
     {path:"log",component:LogComponent},
     {path:"uslo",component:UserhomeComponent},
     {path:"sec",component:SectionsComponent},
-    {path:"attro",component:AttroneysComponent}
+    {path:"attro",component:AttroneysComponent},
+    {path:'at/:id',component:AtroComponent},
+    {path:'at',component:AtroComponent}
+   
 ];

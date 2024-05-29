@@ -1,0 +1,22 @@
+<header class="header"> 
+    <img src="https://cdn.pixabay.com/photo/2014/09/17/22/39/scales-of-justice-450203__340.png"   height="100px"><span>JUSTIPORT</span>
+    <nav class="navigation"> 
+      <a routerLink="/uslo" >Home</a>
+      <a routerLink="/sec" >Section</a>
+      <a  >Log Out</a>
+      <a  ></a> 
+    </nav> 
+</header>
+<div class="law" *ngFor="let usr of readUser">
+    <div class="law1"> 
+        <img src="{{usr.image}}" alt="">
+        <h1>{{usr.name}}</h1>
+        
+        
+        </div>
+        <div class="law2">
+            <h2>Connect With Me !!!</h2>
+            
+
+        </div>
+</div>

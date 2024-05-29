@@ -1,16 +1,18 @@
 .header{
-
-    position: absolute; 
+    margin-top: 1px; 
+    top: 0; 
+    left: 0; 
+    position: relative; 
     width:1374px;
     /*background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://thumbs.dreamstime.com/b/horror-dense-ghostly-dark-forest-scary-creepy-night-landscape-clumsy-tree-branches-against-backdrop-moonlight-164191654.jpg");*/
     background-color: black;
-    height:50px;
+    height:30px;
     padding: 2rem 1%;
     display: flex;
     margin-left: 55px;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    
     box-shadow: 4px 4px 2px #aa9166;
 }
 .navigation{
@@ -20,7 +22,7 @@
      
     flex-direction: row;
     justify-content: space-between;
-    margin-top:  px;
+    margin-top:  5px;
     width:1000px;
     height:50px;
     align-items: center;
@@ -47,16 +49,37 @@
     border-radius: 5px;
     border-width: .2rem;
     color:white;
-} 
-.page-header {
-    margin-left: 55px;
-    width:92%;
-    position: relative;
-    margin-bottom: 45px;
-    padding: 90px 0;
-    text-align: center;
-    background: #aa9166;
-    font-family: 'Nosifer',cursive;
-    font-size: 20px;
-    text-decoration: none;
+}
+.law{
+    display: flex;
+    grid-template-columns: repeat(autofit,minmax(3rem,1fr));
+    gap:4.5em;
+    padding-left: 50px;
+    margin-top: 100px;
+ }
+ .law1{
+     background: black;
+     height: 350PX;
+     width: 300px;
+     align-items: center;
+ }
+ .law1 img {
+    margin-top: 20PX;
+    margin-left: 50px;
+    height: 240px;
+    width: 160px;
+ }
+ .law1 h1{
+    padding-left: 40px;
+    color:#aa9166;
+ }
+ .law2{
+    margin-left: 200px;
+    background-color: #aa9166;
+    margin-bottom: 300px;
+    padding: 10px;
+ }
+ .law2 h2{
+    margin-left: 200px;
+    margin-right: 200px;
  }
