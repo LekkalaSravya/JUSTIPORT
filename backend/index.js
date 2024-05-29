@@ -33,7 +33,7 @@ app.post('/signup',(req,res)=>{
         const newUser = {Name,Email, Password };
         users.push(newUser);
         res.send({
-            message:"DAta added successfully",
+            message:"Data added successfully",
             data:results
         })
     })
@@ -68,7 +68,7 @@ app.post('/login', (req, res) => {
         const newUser = {Email, Password };
         us.push(newUser);
         res.send({
-            message:"DAta added successfully",
+            message:"Data added successfully",
             data:results
         })
     })
@@ -87,6 +87,42 @@ app.post('/adlogin', (req, res) => {
   });
 });
   
+app.get('/lawdet',(req,res)=>{
+  let qrr=`SELECT * FROM lawinfo`;
+  connection.query(qrr,(err,results)=>{
+    if(err){
+      console.log(err,'errs');
+    }
+    if(results.length>0){
+      res.send({
+        message:'All Data',
+        data:results
+      });
+    }
+  });
+});
+app.get('/lawdet/:id',(req,res)=>{
+  //    console.log('Get data by ID');
+  // console.log(req.params.id);    
+  let qrId=req.params.id;
+  let qr = `SELECT * FROM lawinfo where id = ${qrId}`;
+  connection.query(qr,(err,results)=>{
+      if(err){
+          console.log(err);
+  
+      }
+      if(results.length>0){
+          res.send({
+              message:"Get data by ID",
+              data:results
+          })
+      }else{
+          res.send({
+              message:"Data not found dear!"
+          })
+      }
+  })
+  });
 app.listen(7000,()=>{
     console.log("Server is running on 3000 PORT,Testycodeiz");
 });
